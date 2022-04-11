@@ -1,0 +1,128 @@
+* {
+  color: black;
+}
+
+ul {
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  margin-bottom: 21px;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  grid-template-rows: 140px 1fr;
+  grid-template-areas:
+    'h h'
+    'n s';
+  background-color: gainsboro;
+  padding: 0 200px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  grid-area: h;
+  padding: 55px 140px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header-logo {
+  height: 40px;
+  pointer-events: none;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  grid-area: n;
+  padding: 20px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section {
+  grid-area: s;
+  padding: 20px;
+}
+
+.section-bg {
+  background-image: url('https://img.wallpapersafari.com/desktop/1024/576/73/58/7rWChT.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 200px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 10px 1px rgba(0, 0, 0, .05);
+  border-radius: 30px;
+}
+
+.profile {
+  padding: 20px;
+  display: flex;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 10px 1px rgba(0, 0, 0, .05);
+  border-radius: 30px;
+  background-color: white;
+}
+
+.profile-icon {
+  width: 200px;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+
+
+.posts {
+  min-height: 200px;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 3px 10px 1px rgba(0, 0, 0, .05);
+  border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .header-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
